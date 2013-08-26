@@ -1,4 +1,4 @@
 python-mysql-admin-util
 =======================
 
-使用python完成mysql的管理
+使用python编写mysql的管理工具
