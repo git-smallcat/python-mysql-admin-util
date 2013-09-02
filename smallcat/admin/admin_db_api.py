@@ -1,19 +1,10 @@
-# --encoding=utf8--
-import mysql.connector
-import smallcat.mysql.config as dbconfig
+'''
+Created on 2013-9-2
 
-def connect(config):
-    cnx =None
-    try:
-        cnx = mysql.connector.connect(**config)        
-    except mysql.connector.Error as e:
-        print('connect fails![]'.format(e))
-    return cnx
-
-def query(cnx,sql,*param):
-    cursor = cnx.cursor(True)
-    cursor.execute(sql,param)
-    return cursor
+@author: smallcat
+'''
+from dbbase_api import query,connect
+import config as dbconfig
 
 def showStatus(cnx,key):
     cursor = query(cnx, "show status like %s",key)

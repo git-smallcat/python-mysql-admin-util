@@ -40,7 +40,7 @@ DATABASE={
                      #是否使用unicode编码
                      'use_unicode':True,
                      #字符集
-                     'charset':'utf8',
+                     'charset':'latin1',
                      #自动提交
                      'autocommit':False,
                      #数据类型是否为mysql数据类型
